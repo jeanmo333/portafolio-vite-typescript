@@ -54,6 +54,7 @@
 }
 
 body {
+  min-height:608px;
   margin: 0;
   overflow-y: overlay;
   font-family: "Poppins Regular";

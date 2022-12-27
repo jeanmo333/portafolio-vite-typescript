@@ -6,7 +6,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div className="contenedor">
-        <div id="sobremi" className="acerca-de mt-4">
+        <div id="sobremi" className="acerca-de">
           <motion.div
             initial={{
               x: 500,
@@ -19,7 +19,7 @@ export default class AboutMe extends Component {
             transition={{
               duration: 1.5,
             }}
-            className="perfil mb-3">
+            className="perfil">
             <div className="foto"> </div>
           </motion.div>
 

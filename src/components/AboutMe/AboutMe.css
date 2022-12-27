@@ -1,6 +1,7 @@
 .contenedor{
   width: 60%;
   margin: 0 auto ; 
+  min-height:608px;
 }
 
 
@@ -37,6 +38,11 @@
     transition: 1s ease-out;
   }
 
+  .acerca-de {
+    min-height:608px;
+   
+  }
+
  
 
   .acerca-de .info .titulo {
@@ -47,7 +53,6 @@
     font-weight: 900;
     font-size: 40px;
     margin-bottom: 15px;
-  
    
   }
   
@@ -166,8 +171,6 @@
 @media screen and (max-width: 375px) {
   .perfil {
     margin: 0 auto;
-    height: 275px;
-    width: 275px;
     margin-top: -15px;
     margin-bottom: 0;
   }

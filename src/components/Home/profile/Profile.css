@@ -169,7 +169,7 @@ font-weight: bold;
 
   .profile-parent {
     flex-direction: column-reverse;
-    margin: 40px 0 0 0;
+    margin: 5px 0 0 0;
   }
 
   .profile-options {
