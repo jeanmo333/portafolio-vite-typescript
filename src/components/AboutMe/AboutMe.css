@@ -1,7 +1,6 @@
 .contenedor{
   width: 60%;
   margin: 0 auto ; 
-  min-height:608px;
 }
 
 
@@ -170,8 +169,6 @@
 
 @media screen and (max-width: 375px) {
   .perfil {
-    margin: 0 auto;
-    margin-top: -15px;
     margin-bottom: 0;
   }
 
