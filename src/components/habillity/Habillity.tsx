@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { motion } from "framer-motion";
-import "./Habillidad.css";
+import "./Habillity.css";
 
 export default class Habillity extends Component {
   render() {

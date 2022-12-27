@@ -85,6 +85,57 @@
   }
 
 
+
+  @media screen and (max-width: 1110px) {
+    .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0px 0 80px;
+    }
+ 
+    .contenedor{
+      width: 100%;
+      margin: 0 auto ; 
+    }
+    
+  }
+  
+
+  @media screen and (max-width: 910px) {
+    .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 320px;
+      width: 320px;
+      margin: 0px
+    }
+  
+    .contenedor{
+      width: 100%;
+      margin: 0 auto ; 
+    }
+    
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+   
+    .perfil {
+      margin: 0 auto;
+    }
+    .contenedor{
+      width: 100%;
+      margin: 0 auto ; 
+    }
+    
+  }
+  
+  
+
+
   @media screen and (max-width: 678px) {
 
     .info{
@@ -92,14 +143,10 @@
      padding-right:1.5rem;
     }
 
-    .perfil {
+    /* .perfil {
       display: none;
-    }
+    } */
 
-
-
-
-    
   .acerca-de .info .progress:last-child {
     margin-bottom: 2rem;
    
@@ -112,6 +159,26 @@
 
 
 }
+
+
+
+
+@media screen and (max-width: 375px) {
+  .perfil {
+    margin: 0 auto;
+    height: 275px;
+    width: 275px;
+    margin-top: -15px;
+    margin-bottom: 0;
+  }
+
+  .contenedor{
+    width: 100%;
+    margin: 0 auto ; 
+  }
+  
+}
+
 
 
 
