@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import { Link , useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import "./Profile.css";
 
 export default function Profile() {

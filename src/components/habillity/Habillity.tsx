@@ -21,7 +21,8 @@ export default class Habillity extends Component {
           id="sobremi"
           className="acerca-de mt-4">
           <div className="info">
-            <h2 className="titulo mt-4">Habilidades</h2>
+            <h2 className="titulo mt-4">Mis conocimientos</h2>
+
 
             <p className="label">HTML</p>
             <div className="progress">
