@@ -185,27 +185,26 @@ export default function Projects() {
         <div className="card bg-dark text-white">
           <img
             className="card-img-top"
-            src="img/cotizador-seguro.png"
+            src="img/carito-compra.png"
             alt="Card image cap"
           />
 
           <div className="card-body">
             <h5 className="card-title">Cotizador seguro</h5>
             <p className="card-text">
-              Proyecto hecho con html5, css3, bootstrap y javascript It is a
-              long established fact that a reader will be distracted It is a
-              long established fact that a reader will be distracted
+              Proyecto hecho con html5, css3, y con puros codigos javascript, ocupamos 
+              local storage los productos del carrito.
             </p>
             <div className="d-flex card-footer ">
               <a
-                href="https://github.com/jeanmo333/Cotizador-seguro/tree/master"
+                href="https://github.com/jeanmo333/PROYECTO-Carrito-LS"
                 className="btn btn-primary boton mr-2"
                 target="_blank">
                 Codigo
               </a>
 
               <a
-                href="https://hopeful-snyder-2c6226.netlify.app/"
+                href="https://carito-compra-javascript.netlify.app"
                 className="btn btn-primary boton"
                 target="_blank">
                 Demo
