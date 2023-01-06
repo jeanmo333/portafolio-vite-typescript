@@ -1,7 +1,12 @@
 .contenedor{
   width: 60%;
   margin: 0 auto ; 
+ 
 }
+
+/* .acerca-de {
+  margin-top: 80px;
+} */
 
 
   .perfil {
@@ -13,7 +18,7 @@
     height: 380px;
     width: 380px;
     margin: 0 auto;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
 
   }
 
@@ -37,10 +42,7 @@
     transition: 1s ease-out;
   }
 
-  .acerca-de {
-    min-height:608px;
-   
-  }
+
 
  
 
@@ -51,7 +53,7 @@
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 40px;
-    margin-bottom: 15px;
+    
    
   }
   

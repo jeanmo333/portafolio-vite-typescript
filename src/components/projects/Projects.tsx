@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
+
 import { motion } from "framer-motion";
 import "./Projects.css";
 
 export default function Projects() {
   return (
-    <Fragment>
+    <>
+          <div className="contenedor">
       <h1 className="h1">Mis Proyectos</h1>
 
       <motion.div
@@ -20,6 +21,7 @@ export default function Projects() {
           duration: 1.5,
         }}
         className="contenador-card ">
+          
         <div className="card bg-dark text-white">
           <img
             className="card-img-top"
@@ -212,6 +214,7 @@ export default function Projects() {
           </div>
         </div>
       </motion.div>
-    </Fragment>
+      </div>
+    </>
   );
 }

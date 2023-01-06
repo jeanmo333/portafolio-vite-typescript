@@ -52,7 +52,7 @@ export default class Habillity extends Component {
               </div>
             </div>
 
-            <p className="label">Reactjs</p>
+            <p className="label">Reactjs/React Native</p>
             <div className="progress">
               <div className="progress-bar" style={{ width: "70%" }}>
                 70%

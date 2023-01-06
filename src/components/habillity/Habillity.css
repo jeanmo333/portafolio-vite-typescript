@@ -1,11 +1,19 @@
+
+h2{
+  margin-bottom: 1.3rem !important;
+}
 .contenedor{
   width: 50%;
   margin: 0 auto ; 
   margin-top: 100px !important;
 }
 
+/* .info{
+  margin-bottom: 2rem !important;
+}
 
-  
+
+   */
   @media screen and (max-width: 678px) {
 
     .contenedor{
