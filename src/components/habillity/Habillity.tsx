@@ -48,6 +48,13 @@ export default class Habillity extends Component {
             <p className="label">Nodejs</p>
             <div className="progress">
               <div className="progress-bar" style={{ width: "60%" }}>
+                70%
+              </div>
+            </div>
+
+            <p className="label">Nestjs/Nextjs</p>
+            <div className="progress">
+              <div className="progress-bar" style={{ width: "60%" }}>
                 60%
               </div>
             </div>
@@ -76,7 +83,7 @@ export default class Habillity extends Component {
             <p className="label">Git/Github</p>
             <div className="progress">
               <div className="progress-bar" style={{ width: "15%" }}>
-                40%
+                50%
               </div>
             </div>
 
