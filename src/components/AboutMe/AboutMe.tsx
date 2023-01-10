@@ -6,35 +6,13 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div className="contenedor">
-        <div id="sobremi" className="acerca-de">
-          <motion.div
-            initial={{
-              x: 500,
-              opacity: 0,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 1.5,
-            }}
-            className="perfil">
+        <div id="sobremi" className="acerca-de fadeIn">
+          <div className="perfil">
             <div className="foto"> </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{
-              x: -500,
-              opacity: 0,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 1.5,
-            }}
+          <div
+            
             className="info">
             <h2 className="titulo">Sobre mi</h2>
             <p className="resumen">
@@ -51,7 +29,7 @@ export default class AboutMe extends Component {
               investigar sobre las tecnologías que quiero aprender. Puedo adaptar
               cualquier cambio de tecnología y me gusta trabajar en equipo.
             </p>
-          </motion.div>
+          </div>
         </div>
       </div>
     );

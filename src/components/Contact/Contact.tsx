@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
@@ -14,8 +13,6 @@ export default function Contact() {
   //   asunto: "",
   //   mensaje: "",
   // });
-
-
 
   // //state de error
   // const [error, guardarError] = useState(false);
@@ -38,7 +35,6 @@ export default function Contact() {
   //     guardarError(true);
   //     return;
   //   }
-  
 
   //   //eliminar el errror
   //   guardarError(false);
@@ -59,7 +55,7 @@ export default function Contact() {
   //           showConfirmButton: false,
   //           timer: 2000,
   //         });
-       
+
   //         console.log(result.text);
   //       },
   //       (error) => {
@@ -72,8 +68,6 @@ export default function Contact() {
   //       Datos.asunto = ""
   //     );
 
-   
-
   //   //imprimir el spinner
   //   guardarSpinner(true);
 
@@ -83,37 +77,21 @@ export default function Contact() {
   //   }, 1000);
 
   //   e.target.reset();
-  
+
   // };
 
   // //captando lo que se esta escribiendo en el input
   // const handleInputChange = (e) => {
-      
+
   //   guardarDatos({
   //     ...Datos,
   //     [e.target.name]: e.target.value,
   //   });
   // };
 
-
-
-
-
   return (
     <div className="contenido-principal contenedor ">
-      <motion.form 
-          initial={{
-              x: 500,
-              opacity: 0,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 1.5,
-            }}
-      className="formulario" >
+      <form className="formulario">
         <fieldset>
           <legend>Tus Datos</legend>
 
@@ -124,8 +102,7 @@ export default function Contact() {
               type="text"
               placeholder="Tu Nombre"
               name="nombre"
-            // onChange={handleInputChange}
-           
+              // onChange={handleInputChange}
             />
           </div>
 
@@ -136,8 +113,7 @@ export default function Contact() {
               type="email"
               placeholder="Tu Email"
               name="email"
-            //onChange={handleInputChange}
-
+              //onChange={handleInputChange}
             />
           </div>
 
@@ -148,8 +124,7 @@ export default function Contact() {
               type="asunto"
               placeholder="Tu Asunto"
               name="asunto"
-            // onChange={handleInputChange}
-           
+              // onChange={handleInputChange}
             />
           </div>
 
@@ -159,16 +134,16 @@ export default function Contact() {
               rows={3}
               cols={10}
               name="mensaje"
-             // onChange={handleInputChange}
-          
+              // onChange={handleInputChange}
             ></textarea>
           </div>
           {/* {spinner ? <Spinner /> : null} */}
 
-          <button  className="btn btn-info" type="submit" value="Enviar">Enviar</button>
+          <button className="btn btn-info" type="submit" value="Enviar">
+            Enviar
+          </button>
         </fieldset>
-      </motion.form>
+      </form>
     </div>
-
   );
 }

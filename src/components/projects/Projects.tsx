@@ -8,19 +8,7 @@ export default function Projects() {
           <div className="contenedor">
       <h1 className="h1">Mis Proyectos</h1>
 
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="contenador-card ">
+      <div className="contenador-card ">
           
         <div className="card bg-dark text-white">
           <img
@@ -190,7 +178,7 @@ export default function Projects() {
           />
 
           <div className="card-body">
-            <h5 className="card-title">Cotizador seguro</h5>
+            <h5 className="card-title">Carrito de compra</h5>
             <p className="card-text">
               Proyecto hecho con html5, css3, y con puros codigos javascript, ocupamos 
               local storage los productos del carrito.
@@ -212,7 +200,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
       </div>
     </>
   );
