@@ -14,7 +14,7 @@ export default class AboutMe extends Component {
           <div
             
             className="info">
-            <h2 className="titulo">Sobre mi</h2>
+            <h2 className="titulo mt-3">Sobre mi</h2>
             <p className="resumen">
               Soy Moril Jean-francois, Estudiante en el último de ingeniería
               informática. Instituto Profesional de chile (IPCHILE). Me encanta
