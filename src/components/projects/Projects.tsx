@@ -8,7 +8,10 @@ export default function Projects() {
         <h1 className="h1">Mis Proyectos</h1>
 
         <div className="contenador-card ">
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/inventory-amatec.png"
@@ -37,9 +40,12 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/amatec-shop.png"
@@ -68,16 +74,19 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/gestion-veterinaria.png"
               alt="Card image cap"
             />
             <div className="card-body">
-              <h5 className="card-title">Admin veterinaria</h5>
+              <h5 className="card-title">Admin de veterinaria</h5>
               <p className="card-text">
                 Proyecto backend , frontend con reactjs, typescript, material
                 ui, tailwindcss , para almacenar los datos ocupamos mongoDb
@@ -98,9 +107,45 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
+            <img
+              className="card-img-top"
+              src="img/uptask.png"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Admin de proyectos</h5>
+              <p className="card-text">
+                Proyecto fullstack con nodejs, Socket.IO y reactjs,
+                tailwindcss ,para almacenar los datos ocupamos mongoDb
+              </p>
+              <div className="d-flex card-footer ">
+                <a
+                  href="https://github.com/jeanmo333/UpTask_frontend"
+                  className="btn btn-primary boton mr-2"
+                  target="_blank">
+                  Codigo
+                </a>
+
+                <a
+                  href="https://uptask-moril.netlify.app"
+                  className="btn btn-primary boton"
+                  target="_blank">
+                  Demo
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/tienda-mueble.png"
@@ -129,9 +174,12 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/plinificador-gasto.png"
@@ -159,9 +207,12 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/cotizador-seguro.png"
@@ -191,9 +242,12 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card bg-dark text-white">
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
             <img
               className="card-img-top"
               src="img/carito-compra.png"
@@ -222,7 +276,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
