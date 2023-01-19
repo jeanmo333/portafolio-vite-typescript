@@ -121,10 +121,10 @@ export default function Projects() {
             <div className="card-body">
               <h5 className="card-title">Admin de proyectos</h5>
               <p className="card-text">
-                Proyecto fullstack con nodejs, Socket.IO y reactjs,
-                tailwindcss ,para almacenar los datos ocupamos mongoDb
+                Proyecto fullstack con nodejs, Socket.IO y reactjs, tailwindcss
+                ,para almacenar los datos ocupamos mongoDb
               </p>
-              <div className="d-flex card-footer ">
+              <div className="d-flex card-footer">
                 <a
                   href="https://github.com/jeanmo333/UpTask_frontend"
                   className="btn btn-primary boton mr-2"
@@ -135,6 +135,39 @@ export default function Projects() {
                 <a
                   href="https://uptask-moril.netlify.app"
                   className="btn btn-primary boton"
+                  target="_blank">
+                  Demo
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: [null, 1, 1.03] }}
+            transition={{ duration: 0.3 }}
+            className="card bg-dark text-white">
+            <img
+              className="card-img-top"
+              src="img/techpro.png"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Landing page techPRO</h5>
+              <p className="card-text">
+                Proyecto hecho con html5, css3 servimos los imagenes en formatos
+                avif y webp para que pesan menos
+              </p>
+              <div className="d-flex card-footer ">
+                <a
+                  href="https://github.com/jeanmo333/landingPage-techpro"
+                  className="btn btn-primary boton mr-2"
+                  target="_blank">
+                  Codigo
+                </a>
+
+                <a
+                  href="https://techpro-moril.netlify.app"
+                  className="btn btn-primary boton "
                   target="_blank">
                   Demo
                 </a>
