@@ -1,199 +1,154 @@
-.contenedor{
+/** @format */
+
+.contenedor {
   width: 60%;
-  margin: 0 auto ; 
- 
+  margin: 0 auto;
 }
 
 /* .acerca-de {
-  margin-top: 80px;
+  margin-top: 20px;
 } */
 
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px white;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
 
-  .perfil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 0px 0px white;
-    border-radius: 50%;
-    height: 380px;
-    width: 380px;
-    margin: 0 auto;
-    /* margin-top: 6rem; */
+.foto {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/Home/sobremi.jpeg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  }
+.foto:hover {
+  transform: scale(1.04);
+  transition: 1s ease-out;
+}
 
+.acerca-de .info .titulo {
+  /* width: 92%; */
+  margin: 0 auto;
+  color: var(--dark-orange);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+}
 
+.acerca-de .info .resumen {
+  text-align: justify;
+  color: white;
+  font-size: 1.1rem;
+}
 
+.acerca-de .info .label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
 
-  .foto {
-    height: 92%;
-    width: 92%;
-    background-image: url("../../assets/Home/sobremi.jpeg");
-    background-size: cover;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.acerca-de .info .progress {
+  background: var(--dark-orange);
+  border-radius: 0px;
+  margin-bottom: 15px;
+  height: 25px;
+}
 
-  
-  
-  .foto:hover {
-    transform: scale(1.04);
-    transition: 1s ease-out;
-  }
+.acerca-de .info .progress:last-child {
+  margin-bottom: 5rem;
+}
 
-
-
- 
-
-  .acerca-de .info .titulo {
-    /* width: 92%; */
-    margin: 0 auto;
-    color: var(--dark-orange);
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    
-   
-  }
-  
-  .acerca-de .info .resumen {
-    text-align: justify;
-    color: white;
-    font-size: 1.1rem;
-
-  }
-  
-  .acerca-de .info .label{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .acerca-de .info .progress {
-    background: var(--dark-orange);
-    border-radius: 0px;
-    margin-bottom: 15px;
-    height: 25px;
-  }
-
-  .acerca-de .info .progress:last-child {
-    margin-bottom: 5rem;
-   
-  }
-  
-  .acerca-de .info .progress .progress-bar {
+.acerca-de .info .progress .progress-bar {
   background: #6da1bb;
   line-height: 25px;
   text-align: left;
   padding-left: 20px;
+}
+
+.fadeIn {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@media screen and (max-width: 1110px) {
+  .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 0px 0 80px; */
   }
 
+  .contenedor {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
-
-  .fadeIn {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+@media screen and (max-width: 910px) {
+  .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 320px;
+    margin: 0px;
   }
 
-
-
-  @media screen and (max-width: 1110px) {
-    .perfil {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* margin: 0 0px 0 80px; */
-    }
- 
-    .contenedor{
-      width: 100%;
-      margin: 0 auto ; 
-    }
-    
+  .contenedor {
+    width: 100%;
+    margin: 0 auto;
   }
-  
+}
 
-  @media screen and (max-width: 910px) {
-    .perfil {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 320px;
-      width: 320px;
-      margin: 0px
-    }
-  
-    .contenedor{
-      width: 100%;
-      margin: 0 auto ; 
-    }
-    
+@media screen and (max-width: 768px) {
+  .perfil {
+    margin: 0 auto;
   }
-
-
-
-  @media screen and (max-width: 768px) {
-   
-    .perfil {
-      margin: 0 auto;
-    }
-    .contenedor{
-      width: 100%;
-      margin: 0 auto ; 
-    }
-    
+  .contenedor {
+    width: 100%;
+    margin: 0 auto;
   }
-  
-  
+}
 
-
-  @media screen and (max-width: 678px) {
-
-    .info{
-     padding-left: 1.5rem;
-     padding-right:1.5rem;
-    }
-
-    /* .perfil {
-      display: none;
-    } */
+@media screen and (max-width: 678px) {
+  .info {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
   .acerca-de .info .progress:last-child {
     margin-bottom: 2rem;
-   
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
-   
+    margin: 0 auto;
   }
-
-
 }
-
-
-
 
 @media screen and (max-width: 375px) {
   .perfil {
     margin-bottom: 0;
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 auto;
   }
-  
 }
-
-
-
-

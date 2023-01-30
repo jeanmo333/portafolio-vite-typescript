@@ -1,9 +1,9 @@
+/** @format */
 
-.contenedor{
+.contenedor {
   width: 80%;
-  margin: 0 auto ; 
+  margin: 0 auto;
 }
-
 
 .profile-container {
   display: flex;
@@ -11,8 +11,7 @@
   text-align: center;
   justify-content: center;
   height: 100%;
-  margin-top: 12rem;
-
+  margin-top: 7rem;
 }
 
 .profile-parent {
@@ -55,11 +54,10 @@
 
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
- background-color:var(--dark-orange);;
+  background-color: var(--dark-orange);
   color: white;
-font-weight: bold;
+  font-weight: bold;
 }
-
 
 .profile-options .highlighted-btn:hover {
   margin: 0 0 0 28px;
@@ -104,8 +102,6 @@ font-weight: bold;
   transform: scale(1.5);
 }
 
-
-
 @media screen and (max-width: 1110px) {
   .profile-container {
     margin-top: 0px;
@@ -129,18 +125,17 @@ font-weight: bold;
     z-index: 700;
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 auto;
   }
-  
 }
 
 @media screen and (max-width: 910px) {
   .profile-picture {
     height: 320px;
     width: 320px;
-    margin: 0px
+    margin: 0px;
   }
 
   .profile-role-tagline {
@@ -152,11 +147,10 @@ font-weight: bold;
     margin-top: 0px;
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 auto;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -206,11 +200,10 @@ font-weight: bold;
     text-align: justify;
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 auto;
   }
-  
 }
 
 @media screen and (max-width: 375px) {
@@ -234,15 +227,13 @@ font-weight: bold;
     text-align: justify;
   }
 
-  .contenedor{
+  .contenedor {
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 auto;
   }
-
 
   .highlighted-text {
     font-size: 1.05rem;
     font-weight: 900;
   }
-  
 }

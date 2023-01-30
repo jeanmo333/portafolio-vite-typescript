@@ -1,111 +1,111 @@
+/** @format */
 
-import { useState } from 'react';
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useState } from "react";
 import "./Navbar.css";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-function Navbar() {
-    const [click, setClick] = useState(false);
+type Props = {};
 
-  
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
- 
+const Navbar = (props: Props) => {
+  const [clicked, setClicked] = useState(false);
+  const [currentLink, setCurrentLink] = useState(1);
+
+  const handleClick = () => setClicked(!clicked);
+  const closeMobileMenu = () => setClicked(false);
   return (
-    <nav className="navbar-items fixed-top">
-    <a
-    
-     className="navbar-logo"  target="_blank" rel="noreferrer" href='https://github.com/jeanmo333'>
-      <motion.i
-        initial={{
-        x: -500,
-        opacity:0,
-        scale: 0.5
-      }}
-      animate={{
-        x: 0,
-        opacity:1,
-        scale: 1
-      }}
-      transition={{
-        duration: 1.5
-      }}
-       className="fa fa-github"></motion.i>
-      </a>
-
-    
-
-      <div className="menu-icon" onClick={handleClick}>
-        <motion.i
+    <>
+      <nav className='nav'>
+        <a
+          className='navbar-logo'
+          target='_blank'
+          rel='noreferrer'
+          href='https://github.com/jeanmo333'>
+          <motion.i
             initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5
-          }}
-          animate={{
-            x: 0,
-            opacity:1,
-            scale: 1
-          }}
-          transition={{
-            duration: 1.5
-          }}
-         className={click ? "fas fa-times" : "fas fa-bars"}></motion.i>
-      </div>
+              x: -500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+            className='fa fa-github'></motion.i>
+        </a>
 
-      <ul
-       className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-            Home
-          </Link>
-        </li>
+        <ul id='navbar' className={clicked ? "#navbar active" : "#navbar"}>
+          <li onClick={closeMobileMenu}>
+            <Link
+              to='/'
+              className={currentLink === 1 ? "active" : "none"}
+              onClick={() => setCurrentLink(1)}>
+              Home
+            </Link>
+          </li>
 
-        <li>
-          <Link
-            to="/about-mi"
-            className="nav-links"
-            onClick={closeMobileMenu}
-          >
-            Sobre mi
-          </Link>
-        </li>
+          <li onClick={closeMobileMenu}>
+            <Link
+              to='/about-mi'
+              className={currentLink === 2 ? "active" : "none"}
+              onClick={() => setCurrentLink(2)}>
+              Sobre-mi
+            </Link>
+          </li>
 
-        <li>
-          <Link
-            to="/contact"
-            className="nav-links"
-            onClick={closeMobileMenu}
-          >
-            Contacto
-          </Link>
-        </li>
+          <li onClick={closeMobileMenu}>
+            <Link
+              to='/contact'
+              className={currentLink === 3 ? "active" : "none"}
+              onClick={() => setCurrentLink(3)}>
+              Contacto
+            </Link>
+          </li>
 
-        <li>
-          <Link
-            to="/hability"
-            className="nav-links"
-            onClick={closeMobileMenu}
-          >
-            Habilidades
-          </Link>
-        </li>
+          <li onClick={closeMobileMenu}>
+            <Link
+              to='/hability'
+              className={currentLink === 4 ? "active" : "none"}
+              onClick={() => setCurrentLink(4)}>
+              Habilidades
+            </Link>
+          </li>
 
+          <li onClick={closeMobileMenu}>
+            <Link
+              to='/projects'
+              className={currentLink === 5 ? "active" : "none"}
+              onClick={() => setCurrentLink(5)}>
+              Proyectos
+            </Link>
+          </li>
+        </ul>
 
-
-        <li>
-          <Link
-            to="/projects"
-            className="nav-links"
-            onClick={closeMobileMenu}
-          >
-            Proyectos
-          </Link>
-        </li>
-      </ul>
-    </nav>
+        <div id='mobile' onClick={handleClick}>
+          <motion.i
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+            id='bar'
+            className={clicked ? "fas fa-times" : "fas fa-bars"}></motion.i>
+        </div>
+      </nav>
+    </>
   );
-  
-}
+};
 
 export default Navbar;

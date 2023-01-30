@@ -1,11 +1,11 @@
+/** @format */
 
-h2{
+h2 {
   margin-bottom: 1.3rem !important;
 }
-.contenedor{
+.contenedor {
   width: 50%;
-  margin: 0 auto ; 
-  margin-top: 100px !important;
+  margin: 0 auto;
 }
 
 /* .info{
@@ -14,13 +14,10 @@ h2{
 
 
    */
-  @media screen and (max-width: 678px) {
-
-    .contenedor{
-      width: 100%;
-      margin: 0 auto ; 
-      margin-top: 0px !important;
-    }
-
-
+@media screen and (max-width: 678px) {
+  .contenedor {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px !important;
+  }
 }

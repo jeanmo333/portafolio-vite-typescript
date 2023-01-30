@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
@@ -90,60 +92,72 @@ export default function Contact() {
   // };
 
   return (
-    <div className="contenido-principal contenedor ">
-      <form className="formulario">
+    <motion.div
+      className='contenido-principal contenedor'
+      initial={{
+        opacity: 0.7,
+        scale: 0.8,
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1.5,
+      }}>
+      <form className='formulario'>
         <fieldset>
           <legend>Tus Datos</legend>
 
-          <div className="campo">
-            <label htmlFor="nombre">Nombre: </label>
+          <div className='campo'>
+            <label htmlFor='nombre'>Nombre: </label>
             <input
-              id="nombre"
-              type="text"
-              placeholder="Tu Nombre"
-              name="nombre"
+              id='nombre'
+              type='text'
+              placeholder='Tu Nombre'
+              name='nombre'
               // onChange={handleInputChange}
             />
           </div>
 
-          <div className="campo">
-            <label htmlFor="email">Email:</label>
+          <div className='campo'>
+            <label htmlFor='email'>Email:</label>
             <input
-              id="email"
-              type="email"
-              placeholder="Tu Email"
-              name="email"
+              id='email'
+              type='email'
+              placeholder='Tu Email'
+              name='email'
               //onChange={handleInputChange}
             />
           </div>
 
-          <div className="campo">
-            <label htmlFor="asunto">Asunto:</label>
+          <div className='campo'>
+            <label htmlFor='asunto'>Asunto:</label>
             <input
-              id="asunto"
-              type="asunto"
-              placeholder="Tu Asunto"
-              name="asunto"
+              id='asunto'
+              type='asunto'
+              placeholder='Tu Asunto'
+              name='asunto'
               // onChange={handleInputChange}
             />
           </div>
 
-          <div className="campo">
-            <label htmlFor="tel">Mensaje:</label>
+          <div className='campo'>
+            <label htmlFor='tel'>Mensaje:</label>
             <textarea
               rows={3}
               cols={10}
-              name="mensaje"
+              name='mensaje'
               // onChange={handleInputChange}
             ></textarea>
           </div>
           {/* {spinner ? <Spinner /> : null} */}
 
-          <button className="btn btn-info" type="submit" value="Enviar">
+          <button className='btn btn-info' type='submit' value='Enviar'>
             Enviar
           </button>
         </fieldset>
       </form>
-    </div>
+    </motion.div>
   );
 }
