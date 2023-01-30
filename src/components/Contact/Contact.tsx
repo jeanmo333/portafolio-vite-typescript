@@ -103,7 +103,7 @@ export default function Contact() {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 1,
       }}>
       <form className='formulario'>
         <fieldset>

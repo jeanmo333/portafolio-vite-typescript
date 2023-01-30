@@ -18,7 +18,7 @@ export default class AboutMe extends Component {
           scale: 1,
         }}
         transition={{
-          duration: 1.5,
+          duration: 1,
         }}>
         <div id='sobremi' className='acerca-de fadeIn'>
           <div className='perfil'>
