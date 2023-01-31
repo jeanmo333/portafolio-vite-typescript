@@ -2,94 +2,41 @@
 
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Spinner from "../spinner/Spinner";
 import "./Contact.css";
 
 export default function Contact() {
-  // //state del formulario
-  // const [Datos, guardarDatos] = useState({
-  //   nombre: "",
-  //   email: "",
-  //   asunto: "",
-  //   mensaje: "",
-  // });
+  const form = useRef();
 
-  // //state de error
-  // const [error, guardarError] = useState(false);
-  // //state de Spinner
-  // const [spinner, guardarSpinner] = useState(false);
+  const sendEmail = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
 
-  // const form = useRef();
-
-  // const sendEmail = (e: { preventDefault: () => void; target: { reset: () => void; }; }) => {
-  //   e.preventDefault();
-
-  //   //validar formulario
-  //   if (
-  //     Datos.nombre === "" ||
-  //     Datos.email === "" ||
-  //     Datos.mensaje === "" ||
-  //     Datos.asunto === ""
-  //   ) {
-  //     //imprimir el error
-  //     guardarError(true);
-  //     return;
-  //   }
-
-  //   //eliminar el errror
-  //   guardarError(false);
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_rein75b",
-  //       "template_gv0bguc",
-  //       form.current,
-  //       "user_yNmKy2gEiUbOjV15BmYpi"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         Swal.fire({
-  //           position: "center",
-  //           icon: "success",
-  //           title: "enviado con exito",
-  //           showConfirmButton: false,
-  //           timer: 2000,
-  //         });
-
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       },
-
-  //       Datos.nombre = "" ,
-  //       Datos.email = "" ,
-  //       Datos.mensaje = "" ,
-  //       Datos.asunto = ""
-  //     );
-
-  //   //imprimir el spinner
-  //   guardarSpinner(true);
-
-  //   //desabilitar el spinner despues de 1 segundo y medio
-  //   setTimeout(() => {
-  //     guardarSpinner(false);
-  //   }, 1000);
-
-  //   e.target.reset();
-
-  // };
-
-  // //captando lo que se esta escribiendo en el input
-  // const handleInputChange = (e) => {
-
-  //   guardarDatos({
-  //     ...Datos,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
+    emailjs
+      .sendForm(
+        "service_clfug1n",
+        "template_gv0bguc",
+        form.current!,
+        "user_yNmKy2gEiUbOjV15BmYpi"
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "enviado con exito",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -105,6 +52,7 @@ export default function Contact() {
       transition={{
         duration: 1,
       }}>
+      {/* <form className='formulario' ref={form} onSubmit={sendEmail}> */}
       <form className='formulario'>
         <fieldset>
           <legend>Tus Datos</legend>
@@ -115,7 +63,7 @@ export default function Contact() {
               id='nombre'
               type='text'
               placeholder='Tu Nombre'
-              name='nombre'
+              name='user_name'
               // onChange={handleInputChange}
             />
           </div>
@@ -126,18 +74,7 @@ export default function Contact() {
               id='email'
               type='email'
               placeholder='Tu Email'
-              name='email'
-              //onChange={handleInputChange}
-            />
-          </div>
-
-          <div className='campo'>
-            <label htmlFor='asunto'>Asunto:</label>
-            <input
-              id='asunto'
-              type='asunto'
-              placeholder='Tu Asunto'
-              name='asunto'
+              name='user_email'
               // onChange={handleInputChange}
             />
           </div>
@@ -147,7 +84,7 @@ export default function Contact() {
             <textarea
               rows={3}
               cols={10}
-              name='mensaje'
+              name='message'
               // onChange={handleInputChange}
             ></textarea>
           </div>

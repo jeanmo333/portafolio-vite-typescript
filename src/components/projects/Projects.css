@@ -1,3 +1,4 @@
+/** @format */
 
 .h1 {
   margin-top: 1.3rem !important;
@@ -58,10 +59,10 @@
     display: block;
   }
 
-  .container {
+  /* .container {
     max-width: 70%;
     margin-bottom: 5rem;
-  }
+  } */
 
   .card {
     margin-bottom: 0;
@@ -73,10 +74,7 @@
 }
 
 @media screen and (min-width: 350px) {
-
   .h1 {
     margin-top: 1.5rem;
- 
   }
-
 }
