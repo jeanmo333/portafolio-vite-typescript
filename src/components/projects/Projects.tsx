@@ -56,7 +56,7 @@ export default function Projects() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: [null, 1, 1.03] }}
             transition={{ duration: 0.3 }}
             className='card bg-dark text-white'>
@@ -88,9 +88,9 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: [null, 1, 1.03] }}
             transition={{ duration: 0.3 }}
             className='card bg-dark text-white'>
@@ -121,9 +121,9 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: [null, 1, 1.03] }}
             transition={{ duration: 0.3 }}
             className='card bg-dark text-white'>
@@ -154,7 +154,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             whileHover={{ scale: [null, 1, 1.03] }}
